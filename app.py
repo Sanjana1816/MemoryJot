@@ -11,8 +11,8 @@ st.set_page_config(
 )
 
 # header
-st.title=("📝 MemoryJot – Your Smart Reflective Journal")
-st.markdown=("Capture your thoughts, recall your memories, and gain new insights.")
+st.title("📝 MemoryJot – Your Smart Reflective Journal")
+st.markdown("Capture your thoughts, recall your memories, and gain new insights.")
 
 # main layout
 col1,col2=st.columns(2)

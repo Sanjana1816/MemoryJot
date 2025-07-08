@@ -3,11 +3,12 @@ from langchain.prompts import ChatPromptTemplate
 from database import query_journal_entries 
 
 # intialising llm
-llm = ChatOpenAI(model="gpt-4o", temperature=0.2)
+llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.2)
 
 # defining prompt template
 PROMPT_TEMPLATE = """
 You are a reflective journaling assistant named MemoryJot. Your purpose is to help users understand their past thoughts and feelings based on their own journal entries.
+Also you can do a '''normal talk''' with the user even if the content is not present in their journal like a friend.
 
 Use the following retrieved journal entries to answer the user's question.
 Your answer must be based *only* on the provided entries. Do not make up information.
